@@ -17,7 +17,7 @@ const ProductTable = () => {
   const [products, setProducts] = useState([
    
     {
-      productName: "Product 1",
+      productName: "Product 1", 
       brand: "Brand A",
       price: 60,
       quantity: 2,
@@ -115,6 +115,7 @@ const ProductTable = () => {
           <button className="first-button">Add Item...</button>
           <button>
             <FaReceipt />
+            
           </button>
         </div>
       </div>
