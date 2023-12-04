@@ -2,6 +2,8 @@ import React from "react";
 import "./Details.css";
 import { IoIosAdd, IoIosStar } from "react-icons/io";
 import { IoRemoveCircle } from "react-icons/io5";
+import { MdCollections } from "react-icons/md";
+import { FaReceipt } from "react-icons/fa6";
 
 const Details = () => {
   return (
@@ -27,6 +29,8 @@ const Details = () => {
                 <IoIosStar />
                 <IoIosAdd />
                 <IoRemoveCircle />
+                <MdCollections />
+                <FaReceipt />
 
               
               </div>
