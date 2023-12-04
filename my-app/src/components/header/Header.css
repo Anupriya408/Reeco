@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-.main-nav {
+.main-navbar {
   width: 100%;
   display: flex;
   justify-content: space-around;

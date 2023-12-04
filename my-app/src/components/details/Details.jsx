@@ -5,7 +5,7 @@ import { IoRemoveCircle } from "react-icons/io5";
 
 const Details = () => {
   return (
-    <div className="Details-part">
+    <div className="Details-here">
       <table>
         <thead>
           <tr>

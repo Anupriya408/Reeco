@@ -7,8 +7,8 @@ const MissingPopup = ({ onMarkMissing }) => {
   return (
     <div className="missed-popup">
       <p>Mark as Missing --?</p>
-      <button onClick={() => onMarkMissing(true)}>Yes</button>
-      <button onClick={() => onMarkMissing(false)}>No</button>
+      <button onClick={() => onMarkMissing(true)}>Right</button>
+      <button onClick={() => onMarkMissing(false)}>Wrong</button>
     </div>
   );
 };
@@ -112,7 +112,7 @@ const ProductTable = () => {
           </div>
         </div>
         <div className="end">
-          <button className="first-button">Add Item</button>
+          <button className="first-button">Add Item...</button>
           <button>
             <FaReceipt />
           </button>

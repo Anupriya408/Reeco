@@ -1,20 +1,13 @@
 import React from "react";
 import "./NavBar.css";
 
-const RightArrowIcon = () => {
- return (
-    <svg
->
-      <path d="M1 5h8M8 5l-4-4M8 5l-4 4" />
-     </svg>
-  );
-};
+
 
 const NavBar = () => {
   return (
     <div className="NavBar">
       <div className="sub">
-        <div>Orders</div>&nbsp;
+        <div>Orders</div>
         <div>
         
         </div>
