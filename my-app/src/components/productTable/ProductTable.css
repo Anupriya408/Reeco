@@ -71,7 +71,7 @@ td img {
   border-radius: 50%;
 }
 
-.overlay {
+.overlap {
   position: fixed;
   top: 0;
   left: 0;
@@ -84,7 +84,7 @@ td img {
   z-index: 1000;
 }
 
-.missing-popup {
+.missed-popup {
   background: white;
   padding: 20px;
   border-radius: 5px;

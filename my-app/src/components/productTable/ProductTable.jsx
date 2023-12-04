@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import "./ProductTable.css";
 import { FaReceipt, FaSearch, FaCheck, FaTimes, FaEdit } from "react-icons/fa";
 
-// MissingPopup component
+// MissedPopup component
 const MissingPopup = ({ onMarkMissing }) => {
   return (
-    <div className="missing-popup">
-      <p>Mark as Missing - Fast?</p>
+    <div className="missed-popup">
+      <p>Mark as Missing --?</p>
       <button onClick={() => onMarkMissing(true)}>Yes</button>
       <button onClick={() => onMarkMissing(false)}>No</button>
     </div>
@@ -19,53 +19,53 @@ const ProductTable = () => {
     {
       productName: "Product 1",
       brand: "Brand A",
-      price: 20,
+      price: 60,
       quantity: 2,
       total: 80,
       status: "Pending",
       imageUrl:
-        "https://github.com/manish9427/Reeco/assets/107556633/ee15d89a-4e47-44c3-8237-a2e2171b5e18",
-      
+        
+        "https://tse2.mm.bing.net/th?id=OIP.75LtdStl8lDjAL9U9BB2FgHaE7&pid=Api&P=0&h=180",
     },
     {
       productName: "Product 2",
       brand: "Brand B",
-      price: 20,
+      price: 60,
       quantity: 2,
       total: 900,
       status: "Pending",
       imageUrl:
-        "https://github.com/manish9427/Reeco/assets/107556633/222857e6-8e00-4e21-9f5b-490fff868671",
+      "https://tse2.mm.bing.net/th?id=OIP.75LtdStl8lDjAL9U9BB2FgHaE7&pid=Api&P=0&h=180",
     },
     {
       productName: "Product 3",
       brand: "Brand C",
-      price: 20,
+      price: 60,
       quantity: 2,
       total: 78990,
       status: "Pending",
-      imageUrl:
-        "https://github.com/manish9427/Reeco/assets/107556633/ee15d89a-4e47-44c3-8237-a2e2171b5e18",
+      imageUrl:"https://tse2.mm.bing.net/th?id=OIP.zJRSr9beQR72AjkA45aZjAAAAA&pid=Api&P=0&h=180"
+        
     },
     {
       productName: "Product 4",
       brand: "Brand A",
-      price: 20,
+      price: 60,
       quantity: 2,
       total: 90,
       status: "Pending",
       imageUrl:
-        "https://github.com/manish9427/Reeco/assets/107556633/222857e6-8e00-4e21-9f5b-490fff868671",
+      "https://tse2.mm.bing.net/th?id=OIP.zJRSr9beQR72AjkA45aZjAAAAA&pid=Api&P=0&h=180"
     },
     {
       productName: "Product 5",
-      brand: "Brand A",
-      price: 20,
+      brand: "Brand B",
+      price: 60,
       quantity: 2,
       total: 340,
       status: "Pending",
       imageUrl:
-        "https://github.com/manish9427/Reeco/assets/107556633/ee15d89a-4e47-44c3-8237-a2e2171b5e18",
+      "https://tse2.mm.bing.net/th?id=OIP.75LtdStl8lDjAL9U9BB2FgHaE7&pid=Api&P=0&h=180",
     },
   ]);
   const [showMissingPopup, setShowMissingPopup] = useState(false);
@@ -83,14 +83,14 @@ const ProductTable = () => {
   };
 
   const handleEdit = (index) => {
-    console.log(`Editing product at index ${index}`);
+    console.log(`Edit product at index ${index}`);
    
   };
 
   const onMarkMissing = (urgent) => {
     const updatedProducts = [...products];
     updatedProducts[selectedProductIndex].status = urgent
-      ? "Missing - Urgent"
+      ? "Missing - fast"
       : "Missing";
     setProducts(updatedProducts);
   };
@@ -105,7 +105,7 @@ const ProductTable = () => {
       <div className="nav">
         <div className="start">
           <div>
-            <input type="text" placeholder="Search..." />
+            <input type="text" placeholder="Search here..." />
             <span>
               <FaSearch />
             </span>
@@ -129,7 +129,7 @@ const ProductTable = () => {
               <th>Quantity</th>
               <th>Total</th>
               <th>Status</th>
-              <th>Action</th>
+       
             </tr>
           </thead>
           <tbody>
@@ -139,7 +139,7 @@ const ProductTable = () => {
                   <img
                     src={product.imageUrl}
                     alt={`Product ${index + 1}`}
-                    style={{ width: "50px", height: "50px" }}
+                    style={{ width: "40px", height: "40px" }}
                   />
                 </td>
                 <td>{product.productName}</td>
@@ -166,7 +166,7 @@ const ProductTable = () => {
         </table>
       </div>
       {showMissingPopup && (
-        <div className="overlay">
+        <div className="overlap">
           <MissingPopup
             onMarkMissing={(urgent) => {
               onMarkMissing(urgent);
